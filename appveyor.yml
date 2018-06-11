@@ -13,4 +13,7 @@ image: Visual Studio 2017
 build:
   verbosity: minimal
   
+test_script:
+  - '%xunit20%\xunit.console.x86 "c:\projects\ext\src\Bin\Tests\LogoFX.Client.Mvvm.ViewModel.Extensions.Tests.dll" -appveyor -maxthreads 1'
+  
 clone_folder: c:\projects\ext
