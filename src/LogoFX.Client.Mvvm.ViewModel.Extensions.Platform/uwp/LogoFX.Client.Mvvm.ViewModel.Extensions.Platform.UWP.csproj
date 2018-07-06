@@ -159,25 +159,25 @@
       <Version>4.0.0-alpha.1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core">
-      <Version>1.1.1-rc3</Version>
+      <Version>1.1.1-rc4</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Core">
       <Version>1.1.1-rc2</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Model">
-      <Version>1.1.1-rc3</Version>
+      <Version>1.1.1-rc4</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel">
-      <Version>1.1.1-rc2</Version>
+      <Version>1.1.1-rc3</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core">
-      <Version>1.1.1-rc2</Version>
+      <Version>1.1.1-rc4</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Core">
-      <Version>1.1.1-rc2</Version>
+      <Version>1.1.1-rc3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.0.6</Version>
+      <Version>6.1.4</Version>
     </PackageReference>
     <PackageReference Include="System.ComponentModel.Annotations">
       <Version>4.4.1</Version>

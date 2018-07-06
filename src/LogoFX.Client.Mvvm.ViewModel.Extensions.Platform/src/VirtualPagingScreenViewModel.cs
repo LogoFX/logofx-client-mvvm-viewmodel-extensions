@@ -19,14 +19,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         where TItem : class, IModelWrapper<TModel>, ISelectable
     {
         /// <summary>
-        /// Gets the filtered items count.
-        /// </summary>
-        /// <value>
-        /// The filtered items count.
-        /// </value>
-        public abstract override int FilteredCount { get; }
-
-        /// <summary>
         /// Refreshes the data.
         /// </summary>
         protected abstract override void RefreshData();
@@ -38,7 +30,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <returns></returns>
         protected sealed override bool OnItemFilter(VirtualPagingItemViewModel<TItem, TModel> item)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         /// <summary>
@@ -47,15 +39,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         protected sealed override void UpdateSortDescriptors()
         {
 
-        }
-
-        /// <summary>
-        /// Creates the collection view.
-        /// </summary>
-        /// <returns></returns>
-        protected override ICollectionView CreateCollectionView()
-        {
-            return null;
         }
     }
 }

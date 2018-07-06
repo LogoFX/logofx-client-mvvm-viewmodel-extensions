@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -8,10 +8,14 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>LogoFX.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  
+  <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\..\Bin\netstandard2.0\Release</OutputPath>
-    <DocumentationFile>..\..\Bin\netstandard2.0\Release\netstandard2.0\LogoFX.Client.Mvvm.ViewModel.Extensions.xml</DocumentationFile>
+    <DocumentationFile>..\..\Bin\netstandard2.0\Release\LogoFX.Client.Mvvm.ViewModel.Extensions.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +25,7 @@
     <Compile Include="..\src\EditableScreenObjectViewModel.cs" Link="EditableScreenObjectViewModel.cs" />
     <Compile Include="..\src\ErrorInfoViewModel.cs" Link="ErrorInfoViewModel.cs" />
     <Compile Include="..\src\IEditableViewModel.cs" Link="IEditableViewModel.cs" />
+    <Compile Include="..\src\IHaveSubViewModel.cs" Link="IHaveSubViewModel.cs" />
     <Compile Include="..\src\IPagingItem.cs" Link="IPagingItem.cs" />
     <Compile Include="..\src\IPagingViewModel.cs" Link="IPagingViewModel.cs" />
     <Compile Include="..\src\ISaveChanges.cs" Link="ISaveChanges.cs" />
@@ -34,6 +39,7 @@
     <Compile Include="..\src\ShouldDisplayErrorInfoAttribute.cs" Link="ShouldDisplayErrorInfoAttribute.cs" />
     <Compile Include="..\src\VirtualContainer.Collection.cs" Link="VirtualContainer.Collection.cs" />
     <Compile Include="..\src\VirtualContainer.cs" Link="VirtualContainer.cs" />
+    <Compile Include="..\src\VirtualContainerViewModel.cs" Link="VirtualContainerViewModel.cs" />
   </ItemGroup>
 
   <ItemGroup>

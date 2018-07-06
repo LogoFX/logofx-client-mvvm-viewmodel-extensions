@@ -21,20 +21,20 @@ namespace LogoFX.Client.Mvvm.ViewModel.Services
         /// <summary>
         ///     Gets or sets a filter string that specifies the file types and descriptions to display.
         /// </summary>
-        string Filter { get; set; }
-
-        ///// <summary>
-        /////     Gets or sets a value indicating whether this instance is allows to select multiple files.
-        ///// </summary>
-        //bool Multiselect { get; set; }
+        string Filter { get; set; }      
 
         /// <summary>
-        ///     Gets or sets the initial directory displayed by the file dialog box.
+        /// Gets or sets the initial directory.
         /// </summary>
         string InitialDirectory { get; set; }
 
         /// <summary>
-        ///     Gets or sets a string shown in the title bar of the file dialog.
+        /// Gets or sets the initial file name.
+        /// </summary>
+        string InitialFileName { get; set; }
+
+        /// <summary>
+        /// Gets or sets a string shown in the title bar of the file dialog.
         /// </summary>
         string Title { get; set; }
 

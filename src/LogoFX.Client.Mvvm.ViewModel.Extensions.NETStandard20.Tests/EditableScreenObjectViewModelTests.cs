@@ -88,11 +88,11 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
         public void ModelIsChanged_WhenViewModelIsClosedAndMessageResultIsYes_ModelIsSaved()
         {
             var simpleModel = new SimpleEditableModel();
-            var mockMessageService = new FakeMessageService();
-            mockMessageService.SetMessageResult(MessageResult.Yes);
+            var stubMessageService = new FakeMessageService();
+            stubMessageService.SetMessageResult(MessageResult.Yes);
 
             var rootObject = CreateRootObject();
-            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(mockMessageService, simpleModel);
+            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(stubMessageService, simpleModel);
             rootObject.ActivateItem(screenObjectViewModel);
             const string expectedValue = DataGenerator.ValidName;
             simpleModel.Name = expectedValue;
@@ -109,12 +109,12 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
         {
             string initialValue = string.Empty;
             var simpleModel = new SimpleEditableModel(initialValue,20);
-            var mockMessageService = new FakeMessageService();
-            mockMessageService.SetMessageResult(MessageResult.No);
-            RegisterInstance<IMessageService>(mockMessageService);
+            var stubMessageService = new FakeMessageService();
+            stubMessageService.SetMessageResult(MessageResult.No);
+            RegisterInstance<IMessageService>(stubMessageService);
 
             var rootObject = CreateRootObject();         
-            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(mockMessageService, simpleModel);
+            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(stubMessageService, simpleModel);
             rootObject.ActivateItem(screenObjectViewModel);                        
             simpleModel.Name = DataGenerator.ValidName;
             screenObjectViewModel.CloseCommand.Execute(null);
@@ -131,11 +131,11 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
             string initialValue = string.Empty;
             const string newValue = DataGenerator.ValidName;
             var simpleModel = new SimpleEditableModel(initialValue, 20);
-            var mockMessageService = new FakeMessageService();
-            mockMessageService.SetMessageResult(MessageResult.Cancel);
+            var stubMessageService = new FakeMessageService();
+            stubMessageService.SetMessageResult(MessageResult.Cancel);
            
             var rootObject = CreateRootObject();
-            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(mockMessageService, simpleModel);
+            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(stubMessageService, simpleModel);
             rootObject.ActivateItem(screenObjectViewModel);
             simpleModel.Name = newValue;
             screenObjectViewModel.CloseCommand.Execute(null);            
@@ -151,12 +151,12 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
         {
             string initialValue = string.Empty;
             var simpleModel = new SimpleEditableModel(initialValue, 20);
-            var mockMessageService = new FakeMessageService();
-            mockMessageService.SetMessageResult(MessageResult.No);
-            RegisterInstance<IMessageService>(mockMessageService);
+            var stubMessageService = new FakeMessageService();
+            stubMessageService.SetMessageResult(MessageResult.No);
+            RegisterInstance<IMessageService>(stubMessageService);
 
             var rootObject = CreateRootObject();
-            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(mockMessageService, simpleModel);
+            var screenObjectViewModel = new TestEditableScreenSimpleObjectViewModel(stubMessageService, simpleModel);
             rootObject.ActivateItem(screenObjectViewModel);
             simpleModel.Name = DataGenerator.ValidName;
             screenObjectViewModel.CloseCommand.Execute(null);
@@ -170,10 +170,10 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
         {
             var initialPhones = new[] { 546, 432 };
             var compositeModel = new CompositeEditableModel("Here", initialPhones);
-            var mockMessageService = new FakeMessageService();            
+            var stubMessageService = new FakeMessageService();            
             
             var rootObject = CreateRootObject();
-            var screenObjectViewModel = new TestEditableScreenCompositeObjectViewModel(mockMessageService, compositeModel);
+            var screenObjectViewModel = new TestEditableScreenCompositeObjectViewModel(stubMessageService, compositeModel);
             rootObject.ActivateItem(screenObjectViewModel);
             compositeModel.AddPhone(647);
             screenObjectViewModel.ApplyCommand.Execute(null);

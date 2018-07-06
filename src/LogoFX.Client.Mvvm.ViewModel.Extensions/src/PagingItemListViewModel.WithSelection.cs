@@ -24,7 +24,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
 
             private readonly ObservableCollection<TItem> _selectedItems = new ObservableCollection<TItem>();
             private const uint SingleSelectionMask = (uint)(SelectionMode.One | SelectionMode.ZeroOrOne);
-            private const uint MultipleSelectionMask = (uint)(SelectionMode.OneOrMore | SelectionMode.ZeroOrMore);
             private const uint RequiredSelectionMask = (uint)(SelectionMode.OneOrMore | SelectionMode.One);
             private const SelectionMode DefaultSelectionMode = SelectionMode.ZeroOrMore;
             private readonly ReentranceGuard _selectionManagement = new ReentranceGuard();
@@ -226,7 +225,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             /// <summary>
             /// Raises the <see cref="E:CollectionChanged" /> event.
             /// </summary>
-            /// <param name="args">The <see cref="NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
+            /// <param name="e">The <see cref="NotifyCollectionChangedEventArgs"/> instance containing the event data.</param>
             protected override void OnCollectionChanged(NotifyCollectionChangedEventArgs e)
             {
                 if (_internalSelectionHandler == null)
