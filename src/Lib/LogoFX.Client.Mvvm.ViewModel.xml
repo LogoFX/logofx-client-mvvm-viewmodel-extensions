@@ -759,6 +759,13 @@
             <param name="obj">The specified model.</param>
             <returns></returns>
         </member>
+        <member name="M:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.OnBeforeClear(System.Collections.Generic.IEnumerable{System.Object})">
+            <summary>
+            Provides an option to inject additional functionality
+            before the items are cleared from the collection.
+            </summary>
+            <param name="items">The items to be cleared.</param>
+        </member>
         <member name="M:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
             <summary>
             Override this method to inject custom logic on collection change.
@@ -806,6 +813,11 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="E:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.RegularCollectionManager.BeforeClear">
+            <summary>
+            This event is raised before the contents of the collection are cleared.
+            </summary>
+        </member>
         <member name="M:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.AsList">
             <summary>
             Returns the contents as <see cref="T:System.Collections.IList"/>.
@@ -826,8 +838,18 @@
             <summary>
             Initializes a new instance of the <see cref="T:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.WithSelection"/> class.
             </summary>
-            <param name="selectionMode">The selection mode.</param>
-            <param name="isBulk">if set to <c>true</c> [is bulk].</param>
+            <param name="selectionMode">The selection mode. Cannot be used together with selection predicate.</param>
+            <param name="isBulk">if set to <c>true</c> uses bulk operations mode.</param>
+        </member>
+        <member name="M:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.WithSelection.#ctor(System.Predicate{System.Object},System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.WithSelection"/> class.
+            </summary>
+            <param name="selectionPredicate">The selection predicate. Cannot be used together with selection mode.</param>
+            <param name="isBulk">if set to <c>true</c> uses bulk operations mode.</param>
+        </member>
+        <member name="M:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.WithSelection.OnBeforeClear(System.Collections.Generic.IEnumerable{System.Object})">
+            <inheritdoc />            
         </member>
         <member name="M:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.WithSelection.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
             <summary>
@@ -839,7 +861,7 @@
             <summary>
             Selection operation
             </summary>
-            <param name="newSelection">item to select </param>
+            <param name="item">item to select </param>
             <param name="notify"></param>
             <returns>old selected item if available</returns>
         </member>
@@ -847,7 +869,7 @@
             <summary>
             Un-selects object
             </summary>
-            <param name="newSelection"></param>
+            <param name="item"></param>
             <param name="notify"></param>
             <returns><see langword="true"/> if succeeded, otherwise <see langword="false"/></returns>
         </member>
@@ -886,6 +908,9 @@
             <summary>
             Selected items
             </summary>
+        </member>
+        <member name="P:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.WithSelection.SelectionPredicate">
+            <inheritdoc />   
         </member>
         <member name="E:LogoFX.Client.Mvvm.ViewModel.WrappingCollection.WithSelection.SelectionChanged">
             <summary>

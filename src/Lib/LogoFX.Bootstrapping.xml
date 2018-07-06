@@ -4,26 +4,41 @@
         <name>LogoFX.Bootstrapping</name>
     </assembly>
     <members>
+        <member name="T:LogoFX.Bootstrapping.CompositionInfo">
+            <summary>
+            Represents composition information.
+            </summary>
+        </member>
+        <member name="P:LogoFX.Bootstrapping.CompositionInfo.Modules">
+            <summary>
+            Gets the collection of <see cref="T:Solid.Practices.Modularity.ICompositionModule"/>.
+            </summary>
+        </member>
+        <member name="P:LogoFX.Bootstrapping.CompositionInfo.Errors">
+            <summary>
+            Gets the collection of composition errors.
+            </summary>
+        </member>
         <member name="T:LogoFX.Bootstrapping.CompositionHelper">
             <summary>
             Helper for efficient composition modules management
             </summary>
         </member>
-        <member name="M:LogoFX.Bootstrapping.CompositionHelper.GetCompositionModules(System.String,System.String[],System.Boolean)">
+        <member name="M:LogoFX.Bootstrapping.CompositionHelper.GetCompositionInfo(System.String,System.String[],System.Boolean)">
             <summary>
-            Gets the collection of <see cref="T:Solid.Practices.Modularity.ICompositionModule"/>
+            Gets the composition information.
             </summary>
             <param name="modulesPath">The relative modules path.</param>
             <param name="prefixes">The prefixes to be looked for</param>
-            <param name="reuseCompositionInformation">True, if the composition modules information should be reused, false otherwise</param>
+            <param name="reuseCompositionInformation">True, if the composition information should be reused, false otherwise.</param>
             <returns></returns>
         </member>
-        <member name="M:LogoFX.Bootstrapping.CompositionHelper.GetCompositionModules(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Boolean)">
+        <member name="M:LogoFX.Bootstrapping.CompositionHelper.GetCompositionInfo(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Boolean)">
             <summary>
-            Gets the collection of <see cref="T:Solid.Practices.Modularity.ICompositionModule"/>
+            Gets the composition information.
             </summary>
             <param name="assemblies">The collection of assemblies.</param>
-            <param name="reuseCompositionInformation">True, if the composition modules information should be reused, false otherwise</param>
+            <param name="reuseCompositionInformation">True, if the composition information should be reused, false otherwise</param>
             <returns></returns>
         </member>
         <member name="T:LogoFX.Bootstrapping.ContainerExtensions">
@@ -60,6 +75,26 @@
         <member name="E:LogoFX.Bootstrapping.IInitializationInfo.InitializationCompleted">
             <summary>
             Occurs when initialization is completed and the application starts.
+            </summary>
+        </member>
+        <member name="T:LogoFX.Bootstrapping.IHaveErrors">
+            <summary>
+            Gets the collection of errors that happen during initialization.
+            </summary>
+        </member>
+        <member name="P:LogoFX.Bootstrapping.IHaveErrors.Errors">
+            <summary>
+            The errors.
+            </summary>
+        </member>
+        <member name="T:LogoFX.Bootstrapping.IExitInfo">
+            <summary>
+            Exposes additional shutdown information.
+            </summary>
+        </member>
+        <member name="E:LogoFX.Bootstrapping.IExitInfo.Exited">
+            <summary>
+            Occurs when the application shuts down.
             </summary>
         </member>
         <member name="T:LogoFX.Bootstrapping.IBootstrapper">

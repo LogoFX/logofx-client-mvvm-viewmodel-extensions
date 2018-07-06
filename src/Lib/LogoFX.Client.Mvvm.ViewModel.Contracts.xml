@@ -116,6 +116,16 @@
             Selected items
             </summary>
         </member>
+        <member name="T:LogoFX.Client.Mvvm.ViewModel.Contracts.IHaveSelectionPredicate">
+            <summary>
+            Represents an object that has selection predicate.
+            </summary>
+        </member>
+        <member name="P:LogoFX.Client.Mvvm.ViewModel.Contracts.IHaveSelectionPredicate.SelectionPredicate">
+            <summary>
+            Gets or sets the selection predicate.
+            </summary>
+        </member>
         <member name="T:LogoFX.Client.Mvvm.ViewModel.Contracts.IHierarchicalViewModel">
             <summary>
             Represents view model with child items.

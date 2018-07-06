@@ -361,6 +361,9 @@
             Occurs when changes occur that affect whether the command should execute.
             </summary>
         </member>
+        <member name="M:LogoFX.Client.Mvvm.Commanding.CommandBase`1.Dispose">
+            <inheritdoc />
+        </member>
         <member name="E:LogoFX.Client.Mvvm.Commanding.CommandBase`1.PropertyChanged">
             <summary>
             Occurs when a property value changes.
@@ -771,6 +774,22 @@
             </summary>
             <param name="execute">The action to execute.</param>
             <returns></returns>
+        </member>
+        <member name="T:LogoFX.Client.Mvvm.Commanding.IDisposableCollection">
+            <summary>
+            Represents means of managing collection of <see cref="T:System.IDisposable"/>
+            </summary>
+        </member>
+        <member name="P:LogoFX.Client.Mvvm.Commanding.IDisposableCollection.Disposables">
+            <summary>
+            Gets the collection of <see cref="T:System.IDisposable"/>
+            </summary>
+        </member>
+        <member name="M:LogoFX.Client.Mvvm.Commanding.IDisposableCollection.Add(System.IDisposable)">
+            <summary>
+            Adds the disposable to the collection.
+            </summary>
+            <param name="disposable">The disposable.</param>
         </member>
         <member name="T:LogoFX.Client.Mvvm.Commanding.IExtendedCommand">
             <summary>
