@@ -13,14 +13,8 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
     /// Represents object view model which wraps an editable model.
     /// </summary>
     /// <typeparam name="T">Type of editable model.</typeparam>
-    public abstract class EditableObjectViewModel<T> : ObjectViewModel<T>, IEditableViewModel, ICanBeBusy
-#if NETSTANDARD2_0
-        ,IDataErrorInfo
-#endif
-        where T : IEditableModel, IHaveErrors
-#if NETSTANDARD2_0
-        ,IDataErrorInfo
-#endif
+    public abstract class EditableObjectViewModel<T> : ObjectViewModel<T>, IEditableViewModel, ICanBeBusy, IDataErrorInfo
+        where T : IEditableModel, IHaveErrors, IDataErrorInfo
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="EditableObjectViewModel{T}"/> class.
@@ -268,8 +262,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
 
 #endregion
 
-#if NETSTANDARD2_0
-
 #region IDataErrorInfo
 
 
@@ -297,7 +289,5 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         }
 
 #endregion
-
-#endif
     }
 }

@@ -32,8 +32,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             }               
         }
 
-#region Commands
-
         private ICommand _applyCommand;
         /// <summary>
         /// Gets the apply command.
@@ -58,7 +56,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             }
         }
 
-        private ICommand _canCancelChangesCommand;
+        private ICommand _cancelChangesCommand;
         /// <summary>
         /// Gets the cancel changes command.
         /// </summary>
@@ -69,8 +67,8 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         {
             get
             {
-                return _canCancelChangesCommand ??
-                       (_canCancelChangesCommand = ActionCommand
+                return _cancelChangesCommand ??
+                       (_cancelChangesCommand = ActionCommand
                            .When(() => CanCancelChanges && IsDirty)
                            .Do(CancelChangesAsync)
                            .RequeryOnPropertyChanged(this, () => CanCancelChanges)
@@ -94,8 +92,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             }
         }
 
-#endregion
-
         private bool _forcedDirty;
         /// <summary>
         /// Gets or sets a value indicating whether view model's dirty state is forced.        .
@@ -105,7 +101,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// </value>
         public bool ForcedDirty
         {
-            get { return _forcedDirty; }
+            get => _forcedDirty;
             set
             {
                 if (_forcedDirty == value)
@@ -294,10 +290,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <value>
         ///   <c>true</c> if the view model is dirty; otherwise, <c>false</c>.
         /// </value>
-        public bool IsDirty
-        {
-            get { return Model.IsDirty; }
-        }
+        public bool IsDirty => Model.IsDirty;
 
         /// <summary>
         /// Gets or sets a value indicating whether the changes can be cancelled.
@@ -307,14 +300,11 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// </value>
         public bool CanCancelChanges
         {
-            get { return Model.CanCancelChanges; }
-            set { Model.CanCancelChanges = value; }
+            get => Model.CanCancelChanges;
+            set => Model.CanCancelChanges = value;
         }
 
-        bool IHaveErrors.HasErrors
-        {
-            get { return Model.HasErrors; }
-        }
+        bool IHaveErrors.HasErrors => Model.HasErrors;
 
         void IEditableViewModel.CancelChanges()
         {
@@ -337,10 +327,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// The error message for the property. The default is an empty string ("").
         /// </returns>
         /// <param name="columnName">The name of the property whose error message to get. </param>
-        public virtual string this[string columnName]
-        {
-            get { return Model[columnName]; }
-        }
+        public virtual string this[string columnName] => Model[columnName];
 
         /// <summary>
         /// Gets an error message indicating what is wrong with this object.
@@ -348,10 +335,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <returns>
         /// An error message indicating what is wrong with this object. The default is an empty string ("").
         /// </returns>
-        public virtual string Error
-        {
-            get { return Model.Error; }
-        }
+        public virtual string Error => Model.Error;
 
         #endregion
     }

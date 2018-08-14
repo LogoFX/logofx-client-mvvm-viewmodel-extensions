@@ -17,7 +17,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// </value>
         public bool IsBusy
         {
-            get { return _isBusy; }
+            get => _isBusy;
             set
             {
                 if (_isBusy == value)

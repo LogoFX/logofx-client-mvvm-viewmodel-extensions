@@ -59,13 +59,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <returns>
         /// An error message indicating what is wrong with this object. The default is an empty string ("").
         /// </returns>
-        public string Error
-        {
-            get
-            {
-                return Model.Error;
-            }
-        }
+        public string Error => Model.Error;
 
         /// <summary>
         /// Gets the error message for the property with the given name.
@@ -78,8 +72,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         {
             get
             {
-                bool value;
-                var couldGetValue = _isPropertyChanged.TryGetValue(columnName, out value);
+                var couldGetValue = _isPropertyChanged.TryGetValue(columnName, out var value);
                 return couldGetValue && value ? Model[columnName] : string.Empty;
             }
         }
