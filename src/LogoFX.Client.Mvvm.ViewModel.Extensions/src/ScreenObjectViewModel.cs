@@ -97,27 +97,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
 
         #endregion
 
-        #region DisplayName property
-
-        /// <summary>
-        /// Gets or sets the value indicating whether the display name is set explicitly.
-        /// </summary>
-        protected bool SetExplicitly;
-        private string _displayName = string.Empty;
-        /// <summary>
-        /// DisplayName property
-        /// </summary>
-        public virtual new string DisplayName
-        {
-            get { return SetExplicitly ? _displayName : "ViewModel"; }
-            set
-            {
-                SetExplicitly = true;
-                _displayName = value;
-            }
-        }
-        #endregion
-
         #region IsExpanded property
 
         private bool _isExpanded;
