@@ -53,16 +53,13 @@
       <HintPath>..\packages\Attest.Tests.xUnit.1.4.1-rc3\lib\netstandard2.0\Attest.Testing.xUnit.dll</HintPath>
     </Reference>
     <Reference Include="Caliburn.Micro, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Caliburn.Micro\netstandard1.0\Caliburn.Micro.dll</HintPath>
+      <HintPath>..\packages\LogoFX.Client.Tests.Shared.Caliburn.Micro.1.1.0-rc2\lib\net461\Caliburn.Micro.dll</HintPath>
     </Reference>
     <Reference Include="Caliburn.Micro.Platform, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Caliburn.Micro\net45\Caliburn.Micro.Platform.dll</HintPath>
+      <HintPath>..\packages\LogoFX.Client.Tests.Shared.Caliburn.Micro.1.1.0-rc2\lib\net461\Caliburn.Micro.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Caliburn.Micro.Platform.Core, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Caliburn.Micro\net45\Caliburn.Micro.Platform.Core.dll</HintPath>
+      <HintPath>..\packages\LogoFX.Client.Tests.Shared.Caliburn.Micro.1.1.0-rc2\lib\net461\Caliburn.Micro.Platform.Core.dll</HintPath>
     </Reference>
     <Reference Include="FluentAssertions, Version=5.4.2.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentAssertions.5.4.2\lib\net45\FluentAssertions.dll</HintPath>
@@ -203,8 +200,7 @@
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Caliburn.Micro\net45\System.Windows.Interactivity.dll</HintPath>
+      <HintPath>..\packages\LogoFX.Client.Tests.Shared.Caliburn.Micro.1.1.0-rc2\lib\net461\System.Windows.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
