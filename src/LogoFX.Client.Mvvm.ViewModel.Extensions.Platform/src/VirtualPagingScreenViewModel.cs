@@ -1,11 +1,4 @@
-﻿using System;
-#if NET
-using System.ComponentModel;
-#endif
-#if WINDOWS_UWP || NETFX_CORE
-using Windows.UI.Xaml.Data;
-#endif
-using LogoFX.Client.Mvvm.ViewModel.Contracts;
+﻿using LogoFX.Client.Mvvm.ViewModel.Contracts;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions
 {

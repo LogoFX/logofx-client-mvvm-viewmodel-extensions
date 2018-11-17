@@ -36,67 +36,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\Caliburn.Micro\netstandard1.0\Caliburn.Micro.dll</HintPath>
     </Reference>
-    <Reference Include="LogoFX.Client.Core, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Core.Core.1.2.1-rc3\lib\netstandard2.0\LogoFX.Client.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Core.Platform, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Core.1.2.1-rc4\lib\net461\LogoFX.Client.Core.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.Commanding, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Mvvm.Commanding.Core.1.1.1-rc5\lib\netstandard2.0\LogoFX.Client.Mvvm.Commanding.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.Core.Platform, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Mvvm.Core.1.1.1-rc2\lib\net461\LogoFX.Client.Mvvm.Core.Platform.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.Model, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Mvvm.Model.1.1.1-rc5\lib\netstandard2.0\LogoFX.Client.Mvvm.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.Model.Contracts, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Mvvm.Model.1.1.1-rc5\lib\netstandard2.0\LogoFX.Client.Mvvm.Model.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.ViewModel, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Mvvm.ViewModel.Core.1.1.1-rc4\lib\netstandard2.0\LogoFX.Client.Mvvm.ViewModel.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Client.Mvvm.ViewModel.Contracts, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Client.Mvvm.ViewModel.Core.1.1.1-rc4\lib\netstandard2.0\LogoFX.Client.Mvvm.ViewModel.Contracts.dll</HintPath>
-    </Reference>
-    <Reference Include="LogoFX.Core, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LogoFX.Core.1.1.1-rc3\lib\netstandard2.0\LogoFX.Core.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationFramework" />
-    <Reference Include="Solid.Bootstrapping, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Bootstrapping.1.2.1-rc4\lib\netstandard2.0\Solid.Bootstrapping.dll</HintPath>
-    </Reference>
-    <Reference Include="Solid.Extensibility, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Extensibility.1.2.1-rc3\lib\netstandard2.0\Solid.Extensibility.dll</HintPath>
-    </Reference>
-    <Reference Include="Solid.Patterns.Memento, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Patterns.Memento.1.2.1-rc3\lib\netstandard2.0\Solid.Patterns.Memento.dll</HintPath>
-    </Reference>
-    <Reference Include="Solid.Practices.IoC, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.IoC.1.2.1-rc5\lib\netstandard2.0\Solid.Practices.IoC.dll</HintPath>
-    </Reference>
-    <Reference Include="Solid.Practices.Middleware, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Solid.Practices.Middleware.1.2.1-rc3\lib\netstandard2.0\Solid.Practices.Middleware.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.Annotations, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.ComponentModel.Annotations.4.4.1\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Reactive.4.0.0\lib\net46\System.Reactive.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reactive.Core, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Reactive.Core.4.0.0\lib\net46\System.Reactive.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reactive.Interfaces, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Reactive.Interfaces.4.0.0\lib\net46\System.Reactive.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reactive.Linq, Version=3.0.3000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\System.Reactive.Linq.4.0.0\lib\net46\System.Reactive.Linq.dll</HintPath>
-    </Reference>
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -146,11 +89,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Extensions\netstandard2.0\LogoFX.Client.Mvvm.ViewModel.Extensions.NETStandard20.csproj">
       <Project>{e52ddaed-b55a-487b-8180-befc343acbbb}</Project>
       <Name>LogoFX.Client.Mvvm.ViewModel.Extensions.NETStandard20</Name>
@@ -159,6 +97,23 @@
       <Project>{a66d81bd-6e86-4fb5-a185-cea16c26aec1}</Project>
       <Name>LogoFX.Client.Mvvm.ViewModel.Shared.NETStandard20</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core">
+      <Version>1.1.1-rc5</Version>
+    </PackageReference>
+    <PackageReference Include="LogoFX.Client.Mvvm.Core">
+      <Version>1.1.1-rc2</Version>
+    </PackageReference>
+    <PackageReference Include="LogoFX.Client.Mvvm.Model">
+      <Version>1.1.1-rc5</Version>
+    </PackageReference>
+    <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core">
+      <Version>1.1.1-rc4</Version>
+    </PackageReference>
+    <PackageReference Include="LogoFX.Core">
+      <Version>1.1.1-rc3</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
