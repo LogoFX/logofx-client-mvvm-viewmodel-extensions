@@ -149,9 +149,9 @@
       <Project>{e52ddaed-b55a-487b-8180-befc343acbbb}</Project>
       <Name>LogoFX.Client.Mvvm.ViewModel.Extensions.NETStandard20</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Shared\netstandard2.0\LogoFX.Client.Mvvm.ViewModel.Shared.NETStandard20.csproj">
-      <Project>{a66d81bd-6e86-4fb5-a185-cea16c26aec1}</Project>
-      <Name>LogoFX.Client.Mvvm.ViewModel.Shared.NETStandard20</Name>
+    <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Shared\LogoFX.Client.Mvvm.ViewModel.Shared.csproj">
+      <Project>{87896fea-3913-4895-adeb-902cd7b1fec0}</Project>
+      <Name>LogoFX.Client.Mvvm.ViewModel.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

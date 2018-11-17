@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Shared\netstandard2.0\LogoFX.Client.Mvvm.ViewModel.Shared.NETStandard20.csproj" />
+    <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Shared\LogoFX.Client.Mvvm.ViewModel.Shared.csproj" />
   </ItemGroup>
 
 </Project>
