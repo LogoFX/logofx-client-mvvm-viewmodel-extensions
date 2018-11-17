@@ -89,9 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Extensions\netstandard2.0\LogoFX.Client.Mvvm.ViewModel.Extensions.NETStandard20.csproj">
-      <Project>{e52ddaed-b55a-487b-8180-befc343acbbb}</Project>
-      <Name>LogoFX.Client.Mvvm.ViewModel.Extensions.NETStandard20</Name>
+    <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Extensions\LogoFX.Client.Mvvm.ViewModel.Extensions.csproj">
+      <Project>{26bd2c57-2730-4d9b-ae7c-341ee5b56a4a}</Project>
+      <Name>LogoFX.Client.Mvvm.ViewModel.Extensions</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Shared\LogoFX.Client.Mvvm.ViewModel.Shared.csproj">
       <Project>{87896fea-3913-4895-adeb-902cd7b1fec0}</Project>
