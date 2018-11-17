@@ -1,8 +1,0 @@
-﻿<Application
-    x:Class="LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.UWP.Tests.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.UWP.Tests"
-    RequestedTheme="Light">
-
-</Application>
