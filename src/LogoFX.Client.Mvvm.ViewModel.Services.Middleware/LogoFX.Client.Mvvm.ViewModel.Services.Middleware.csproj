@@ -17,7 +17,7 @@
   </PropertyGroup>  
 
   <ItemGroup>
-    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc4" />
+    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc5" />
   </ItemGroup>  
 
   <ItemGroup>

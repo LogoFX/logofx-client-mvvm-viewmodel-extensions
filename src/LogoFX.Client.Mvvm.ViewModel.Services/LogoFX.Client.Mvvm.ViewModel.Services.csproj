@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModelFactory" Version="1.2.1-rc2" />
-    <PackageReference Include="Solid.Practices.IoC" Version="1.2.1-rc5" />
+    <PackageReference Include="Solid.Practices.IoC" Version="1.2.1-rc7" />
   </ItemGroup>
 
   <ItemGroup>
