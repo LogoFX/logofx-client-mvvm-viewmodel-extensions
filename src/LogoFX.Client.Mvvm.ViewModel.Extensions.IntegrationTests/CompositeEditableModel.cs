@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using LogoFX.Client.Mvvm.Model;
 using LogoFX.Client.Mvvm.Model.Contracts;
 
+// ReSharper disable once CheckNamespace
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
 {
     class CompositeEditableModel : EditableModel, ICompositeEditableModel, ICloneable<CompositeEditableModel>, IEquatable<CompositeEditableModel>

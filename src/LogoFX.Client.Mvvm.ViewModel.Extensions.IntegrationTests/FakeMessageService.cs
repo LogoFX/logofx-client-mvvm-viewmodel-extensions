@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using System.Windows;
 using Caliburn.Micro;
 using LogoFX.Client.Mvvm.ViewModel.Services;
 using LogoFX.Client.Mvvm.ViewModel.Shared;
 
-namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
+namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
 {
     class FakeMessageService : IMessageService
     {
@@ -39,13 +38,5 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
         {
             _messageResult = messageResult;
         }
-    }
-
-    class FakeWindowManager : WindowManager
-    {
-        public Window CreateWindow(object rootModel)
-        {
-            return CreateWindow(rootModel, false, null, null);
-        }
-    }
+    }   
 }

@@ -1,13 +1,14 @@
 ﻿using System.Linq;
 using Caliburn.Micro;
 using FluentAssertions;
+using LogoFX.Client.Mvvm.ViewModel.Extensions.Tests;
 using LogoFX.Client.Mvvm.ViewModel.Services;
 using LogoFX.Client.Mvvm.ViewModel.Shared;
 using LogoFX.Client.Testing.Integration.xUnit;
 using LogoFX.Client.Testing.Shared.Caliburn.Micro;
 using Xunit;
 
-namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
+namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
 {    
     public class EditableScreenObjectViewModelTests : IntegrationTestsBase<TestConductorViewModel, TestBootstrapper>
     {        

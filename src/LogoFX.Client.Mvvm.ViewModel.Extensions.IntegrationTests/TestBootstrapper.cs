@@ -3,7 +3,7 @@ using LogoFX.Client.Bootstrapping.Adapters.SimpleContainer;
 using Solid.Bootstrapping;
 using Solid.Practices.IoC;
 
-namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
+namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
 {
     public class TestBootstrapper : BootstrapperContainerBase<ExtendedSimpleContainerAdapter>
         .WithRootObject<TestConductorViewModel>, IHaveResolver
