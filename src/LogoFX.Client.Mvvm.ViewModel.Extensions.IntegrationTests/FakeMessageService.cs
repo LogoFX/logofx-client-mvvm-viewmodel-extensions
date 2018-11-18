@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Caliburn.Micro;
 using LogoFX.Client.Mvvm.ViewModel.Services;
 using LogoFX.Client.Mvvm.ViewModel.Shared;
 
