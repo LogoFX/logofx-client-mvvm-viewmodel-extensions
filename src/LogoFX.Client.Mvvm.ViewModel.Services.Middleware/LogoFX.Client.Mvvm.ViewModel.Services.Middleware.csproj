@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>LogoFX.Client.Mvvm.ViewModel.Services.Middleware</AssemblyName>
     <RootNamespace>LogoFX.Client.Mvvm.ViewModel.Services.Middleware</RootNamespace>
-    <Version>1.2.1</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -17,7 +17,7 @@
   </PropertyGroup>  
 
   <ItemGroup>
-    <PackageReference Include="Solid.Bootstrapping" Version="1.2.1-rc5" />
+    <PackageReference Include="Solid.Bootstrapping" Version="2.0.0-rc1" />
   </ItemGroup>  
 
   <ItemGroup>
