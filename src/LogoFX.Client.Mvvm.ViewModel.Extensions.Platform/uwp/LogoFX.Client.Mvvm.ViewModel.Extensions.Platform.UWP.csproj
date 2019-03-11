@@ -157,22 +157,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core">
-      <Version>2.0.0-rc2</Version>
+      <Version>2.0.0-rc3</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Core">
-      <Version>2.0.0-rc1</Version>
+      <Version>2.0.0-rc2</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Model">
-      <Version>2.0.0-rc2</Version>
+      <Version>2.0.0-rc3</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel">
-      <Version>2.0.0-rc2</Version>
+      <Version>2.0.0-rc3</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core">
-      <Version>2.0.0-rc1</Version>
+      <Version>2.0.0-rc2</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Core">
-      <Version>2.0.0-rc1</Version>
+      <Version>2.0.0-rc2</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.9</Version>
