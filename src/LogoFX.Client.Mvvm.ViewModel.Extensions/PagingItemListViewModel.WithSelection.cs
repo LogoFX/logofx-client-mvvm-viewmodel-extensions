@@ -6,7 +6,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
-using System.Windows.Threading;
+using System.Threading;
 using LogoFX.Client.Core;
 using LogoFX.Client.Mvvm.ViewModel.Contracts;
 using LogoFX.Core;
