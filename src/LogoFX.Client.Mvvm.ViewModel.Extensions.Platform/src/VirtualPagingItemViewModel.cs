@@ -48,7 +48,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             Index = container.Index;
             _container = container;
             _createVmFunc = createVmFunc;
-            _container.NotifyOn("Model", OnModelCame);
+            _container.NotifyOn("Model", OnModelArrived);
         }
 
         #region Events
@@ -136,7 +136,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             }
         }
 
-        private async void OnModelCame(object newValue, object oldValue)
+        private async void OnModelArrived(object newValue, object oldValue)
         {
             TItem item = await _createVmFunc((TModel)newValue);
             IsSelected = item.IsSelected;

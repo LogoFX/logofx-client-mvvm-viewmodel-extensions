@@ -101,7 +101,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
 
         #endregion        
 
-        #region ICanBusy implementation
+        #region ICanBeBusy implementation
 
         private bool _isBusy;
 

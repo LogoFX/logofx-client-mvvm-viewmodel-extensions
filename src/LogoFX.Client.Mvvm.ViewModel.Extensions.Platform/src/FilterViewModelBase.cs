@@ -124,6 +124,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                 }
             }
 
+            //TODO: Use IModelWrapper
             ((ObjectViewModel)this).Model = model;
             NotifyOfPropertyChange(() => Model);
 
