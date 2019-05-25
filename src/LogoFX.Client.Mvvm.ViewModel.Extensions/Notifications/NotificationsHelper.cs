@@ -5,6 +5,9 @@ using System.Reactive.Linq;
 // ReSharper disable once CheckNamespace
 namespace LogoFX.Client.Mvvm.Notifications
 {
+    /// <summary>
+    /// Notifications helper
+    /// </summary>
     public static class NotificationsHelper
     {
         /// <summary>
