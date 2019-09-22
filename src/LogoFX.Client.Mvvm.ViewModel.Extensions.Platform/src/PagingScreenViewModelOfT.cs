@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections;
-#if NET
+#if NET || NETCORE
 using System.ComponentModel;
 #endif
 using System.Linq;
 using System.Threading.Tasks;
-#if NET
+#if NET || NETCORE
 using System.Windows.Data;
 #endif
 #if WINDOWS_UWP || NETFX_CORE
@@ -526,7 +526,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         protected virtual ICollectionView CreateCollectionView()
         {
             var collectionView =
-#if NET
+#if NET || NETCORE
                 CollectionViewSource.GetDefaultView(Items);
 #endif
 #if WINDOWS_UWP || NETFX_CORE                

@@ -80,7 +80,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                         if (_emptyFilter == null)
                         {
                             _emptyFilter = _filter.Model == null ? null :
-#if NET
+#if NET || NETCORE
                                 (TFilterModel)_filter.Model.Clone()
 #endif
 #if WINDOWS_UWP || NETFX_CORE
@@ -111,7 +111,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                 }
 
                 Filter.SetModel(_emptyFilter == null ? null :
-#if NET
+#if NET || NETCORE
                     (TFilterModel)_emptyFilter.Clone()
 #endif
 #if WINDOWS_UWP || NETFX_CORE
