@@ -5,6 +5,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AssemblyName>LogoFX.Client.Mvvm.ViewModel.Services.Platform</AssemblyName>
     <RootNamespace>LogoFX.Client.Mvvm.ViewModel.Services</RootNamespace>
+    <Version>2.1.0</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
