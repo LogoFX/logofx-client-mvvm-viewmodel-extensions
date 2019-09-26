@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Input;
-#if NET
+#if NET || NETCORE
 using System.Windows.Threading;
 #endif
 #if WINDOWS_UWP || NETFX_CORE
@@ -225,7 +225,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         }
 
         private void RefreshTimer_Tick(object sender,
-#if NET
+#if NET || NETCORE
             EventArgs 
 #endif
 #if WINDOWS_UWP || NETFX_CORE
