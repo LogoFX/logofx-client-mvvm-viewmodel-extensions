@@ -9,7 +9,7 @@ using LogoFX.Client.Testing.Shared.Caliburn.Micro;
 using Xunit;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
-{    
+{
     public class EditableScreenObjectViewModelTests : IntegrationTestsBase<TestConductorViewModel, TestBootstrapper>
     {        
         //Note: may use here IntegrationTestsBaseWithActivation as well - package still not available.
