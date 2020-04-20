@@ -15,7 +15,7 @@
     <PackageReference Include="FluentAssertions">
       <Version>5.10.3</Version>
     </PackageReference>
-    <PackageReference Include="LogoFX.Client.Bootstrapping" Version="2.1.0" />
+    <PackageReference Include="LogoFX.Client.Bootstrapping" Version="2.1.1-rc2" />
     <PackageReference Include="LogoFX.Client.Bootstrapping.Adapters.SimpleContainer">
       <Version>2.1.0</Version>
     </PackageReference>

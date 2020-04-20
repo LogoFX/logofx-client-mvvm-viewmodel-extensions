@@ -157,22 +157,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core">
-      <Version>2.1.0</Version>
+      <Version>2.1.1-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Core">
-      <Version>2.1.0</Version>
+      <Version>2.1.1-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Model">
       <Version>2.1.1-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel">
-      <Version>2.1.0</Version>
+      <Version>2.1.1-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Contracts">
-      <Version>2.1.0</Version>
+      <Version>2.1.1-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core">
-      <Version>2.1.0</Version>
+      <Version>2.1.1-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Core">
       <Version>2.1.0</Version>
