@@ -27,12 +27,12 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Bin\net\Release\</OutputPath>
+    <OutputPath>..\..\Bin\netframework\Release\</OutputPath>
     <DefineConstants>TRACE;NET</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>0</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>..\..\Bin\net\Release\LogoFX.Client.Mvvm.ViewModel.Services.Platform.xml</DocumentationFile>
+    <DocumentationFile>..\..\Bin\netframework\Release\LogoFX.Client.Mvvm.ViewModel.Services.Platform.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>

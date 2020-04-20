@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("LogoFX.Client.Mvvm.ViewModel.Services.Platform")]
+[assembly: AssemblyTitle("LogoFX.Client.Mvvm.ViewModel.Extensions.Platform")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LogoFX.Client.Mvvm.ViewModel.Services.Platform")]
+[assembly: AssemblyProduct("LogoFX.Client.Mvvm.ViewModel.Extensions.Platform")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ef9f60db-c87b-448b-a6bd-acb13df51c94")]
+[assembly: Guid("f7e89e24-85a4-4b72-b726-af623a039e3d")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.1.0")]
-[assembly: AssemblyFileVersion("2.1.0")]
+[assembly: AssemblyVersion("2.1.1")]
+[assembly: AssemblyFileVersion("2.1.1")]

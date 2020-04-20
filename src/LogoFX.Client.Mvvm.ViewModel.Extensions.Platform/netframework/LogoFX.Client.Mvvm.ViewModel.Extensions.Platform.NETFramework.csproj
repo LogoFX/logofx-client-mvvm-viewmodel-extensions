@@ -25,11 +25,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Bin\net\Release\</OutputPath>
+    <OutputPath>..\..\Bin\netframework\Release\</OutputPath>
     <DefineConstants>TRACE;NET</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Bin\net\Release\LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.xml</DocumentationFile>
+    <DocumentationFile>..\..\Bin\netframework\Release\LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Caliburn.Micro, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">

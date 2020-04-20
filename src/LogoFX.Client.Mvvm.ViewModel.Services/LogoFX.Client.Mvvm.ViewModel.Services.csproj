@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>..\Bin\netstandard2.0\Release</OutputPath>
-    <DocumentationFile>..\Bin\netstandard2.0\Release\LogoFX.Client.Mvvm.ViewModel.Services.xml</DocumentationFile>
-    <DebugType>full</DebugType>
+    <OutputPath>..\Bin\netstandard\Release</OutputPath>
+    <DocumentationFile>..\Bin\netstandard\Release\LogoFX.Client.Mvvm.ViewModel.Services.xml</DocumentationFile>
+    <EmbedAllSources>True</EmbedAllSources>
+    <DebugType>embedded</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>  
 
