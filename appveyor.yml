@@ -4,7 +4,6 @@ before_build:
 - cd src
 - nuget restore		
 
-
 init:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
@@ -12,8 +11,5 @@ image: Visual Studio 2019
 
 build:
   verbosity: minimal
-  
-test_script:
-  - '%xunit20%\xunit.console.x86 "c:\projects\ext\src\Bin\Tests\LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests.dll" -appveyor -maxthreads 1'
   
 clone_folder: c:\projects\ext
