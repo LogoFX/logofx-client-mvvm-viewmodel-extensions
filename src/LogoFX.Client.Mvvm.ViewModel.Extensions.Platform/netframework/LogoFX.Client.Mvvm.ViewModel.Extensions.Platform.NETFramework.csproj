@@ -23,9 +23,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-     <EmbedAllSources>True</EmbedAllSources>
-     <DebugType>embedded</DebugType>
-     <DebugSymbols>true</DebugSymbols>
+    <EmbedAllSources>True</EmbedAllSources>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
     <Optimize>true</Optimize>
     <OutputPath>..\..\Bin\netframework\Release\</OutputPath>
     <DefineConstants>TRACE;NET</DefineConstants>
@@ -102,22 +102,22 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Core">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Model">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Contracts">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Core">
-      <Version>2.1.0</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -30,15 +30,15 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-     <EmbedAllSources>True</EmbedAllSources>
-     <DebugType>embedded</DebugType>
-     <DebugSymbols>true</DebugSymbols>
+    <EmbedAllSources>True</EmbedAllSources>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
     <Optimize>true</Optimize>
     <OutputPath>..\..\Bin\uwp\Release\</OutputPath>
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>..\..\Bin\uwp\Release\LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.xml</DocumentationFile>    
+    <DocumentationFile>..\..\Bin\uwp\Release\LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
@@ -158,25 +158,25 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Core">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.Model">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Contracts">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core">
-      <Version>2.1.1-rc1</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="LogoFX.Core">
-      <Version>2.1.0</Version>
+      <Version>2.2.0-rc1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.10</Version>

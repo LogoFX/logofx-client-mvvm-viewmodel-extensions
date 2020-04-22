@@ -30,11 +30,11 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
             get { return _name; }
             set
             {
-                var options = new SetPropertyOptions
+                var options = new EditableSetPropertyOptions
                 {
                     AfterValueUpdate = () => NotifyOfPropertyChange(() => Error)
                 };
-                SetPropertyOptions(ref _name, value, options);
+                SetProperty(ref _name, value, options);
             }
         }
         public int Age { get; set; }
