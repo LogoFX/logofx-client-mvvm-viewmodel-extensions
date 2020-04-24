@@ -28,7 +28,7 @@
     <PackageReference Include="LogoFX.Client.Tests.Shared.Caliburn.Micro">
       <Version>2.2.0-rc1</Version>
     </PackageReference>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
     <PackageReference Include="xunit.core">
       <Version>2.4.1</Version>
     </PackageReference>
