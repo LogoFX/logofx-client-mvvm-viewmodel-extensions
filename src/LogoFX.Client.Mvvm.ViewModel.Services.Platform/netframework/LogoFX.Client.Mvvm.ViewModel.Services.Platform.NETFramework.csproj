@@ -25,16 +25,16 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-     <EmbedAllSources>True</EmbedAllSources>
-     <DebugType>embedded</DebugType>
-     <DebugSymbols>true</DebugSymbols>
+    <EmbedAllSources>True</EmbedAllSources>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>true</DebugSymbols>
     <Optimize>true</Optimize>
     <OutputPath>..\..\Bin\netframework\Release\</OutputPath>
-    <DefineConstants>TRACE;NET</DefineConstants>
+    <DefineConstants>TRACE;NETFRAMEWORK</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>0</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
-    <DocumentationFile>..\..\Bin\netframework\Release\LogoFX.Client.Mvvm.ViewModel.Services.Platform.xml</DocumentationFile>    
+    <DocumentationFile>..\..\Bin\netframework\Release\LogoFX.Client.Mvvm.ViewModel.Services.Platform.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
