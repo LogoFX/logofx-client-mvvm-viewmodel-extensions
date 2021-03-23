@@ -11,5 +11,6 @@ image: Visual Studio 2019
 
 build:
   verbosity: minimal
+  solution: .\src\LogoFX.Client.Mvvm.ViewModel.Extensions.sln
   
 clone_folder: c:\projects\ext
