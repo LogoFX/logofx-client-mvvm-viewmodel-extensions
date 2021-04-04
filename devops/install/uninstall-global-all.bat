@@ -1,5 +1,5 @@
-call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Shared
-call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Services.Core
-call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Services
-call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Extensions.Core
-call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Extensions
+call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Shared %1
+call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Services.Core %1
+call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Services %1
+call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Extensions.Core %1
+call uninstall-global-single LogoFX.Client.Mvvm.ViewModel.Extensions %1
