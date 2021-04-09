@@ -24,5 +24,5 @@ for the most common view models (including editing, paging and virtualization)</
       <dependency id="LogoFX.Client.Mvvm.ViewModel.Contracts" version="2.2.0-rc2" />
       <dependency id="LogoFX.Client.Mvvm.ViewModel.Core" version="2.2.0-rc2" />
     </dependencies>
-  </metadata>  
+  </metadata>
 </package>

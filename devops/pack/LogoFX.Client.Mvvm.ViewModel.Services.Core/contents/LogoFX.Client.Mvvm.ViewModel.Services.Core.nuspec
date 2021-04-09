@@ -22,5 +22,5 @@
       <dependency id="LogoFX.Client.Mvvm.ViewModelFactory" version="2.2.0-rc2" />
       <dependency id="LogoFX.Client.Mvvm.ViewModel.Shared" version="2.2.0-rc2" />
     </dependencies>
-  </metadata>  
+  </metadata>
 </package>
