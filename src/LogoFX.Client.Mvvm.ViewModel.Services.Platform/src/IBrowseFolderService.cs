@@ -17,7 +17,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Services
         /// </summary>
         DirectoryInfo SelectedPath { get; set; }
 
-#if NET || NETCORE
+#if NET || NETCORE || NETFRAMEWORK
         /// <summary>
         /// Gets or sets the root folder where the browsing starts from.
         /// </summary>

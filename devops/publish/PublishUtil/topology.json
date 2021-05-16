@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "LogoFX.Client.Mvvm.ViewModel.Shared"
+    },
+    {
+      "id": "LogoFX.Client.Mvvm.ViewModel.Services.Core",
+      "dependencies": [ "LogoFX.Client.Mvvm.ViewModel.Shared" ]
+    },
+    {
+      "id": "LogoFX.Client.Mvvm.ViewModel.Services"
+    },
+    {
+      "id": "LogoFX.Client.Mvvm.ViewModel.Extensions.Core",
+      "dependencies": [ "LogoFX.Client.Mvvm.ViewModel.Shared" ]
+    },
+    {
+      "id": "LogoFX.Client.Mvvm.ViewModel.Extensions",
+      "dependencies": [ "LogoFX.Client.Mvvm.ViewModel.Shared",  "LogoFX.Client.Mvvm.ViewModel.Extensions.Core"]
+    }
+  ]
+}

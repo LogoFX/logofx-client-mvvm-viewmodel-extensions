@@ -1,15 +1,23 @@
+version: 2.2.0.{build}
 configuration: Release
-
 before_build:
 - cd src
-- nuget restore		
-
+- nuget restore
 init:
-  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 image: Visual Studio 2019
-
 build:
   verbosity: minimal
-  
+  project: ./src/LogoFX.Client.Mvvm.ViewModel.Extensions.sln
 clone_folder: c:\projects\ext
+after_test:
+- cd ../devops
+- cd publish
+- cd PublishUtil
+- dotnet build
+- cd bin
+- dotnet PublishUtil.dll
+artifacts:
+- name: Packages
+  path: ./output/*.nupkg
+...
