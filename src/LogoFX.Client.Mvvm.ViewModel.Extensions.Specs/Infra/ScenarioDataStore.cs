@@ -27,6 +27,12 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
             set => SetValueImpl(value);
         }
 
+        public FakeMessageService MockMessageService
+        {
+            get => GetValueImpl<FakeMessageService>();
+            set => SetValueImpl(value);
+        }
+
         public bool WasDirtyRaised
         {
             get => GetValueImpl<bool>();

@@ -54,7 +54,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
             wasCancelChangesRaised.Should().BeTrue();
         }
 
-        [Fact(Skip="TODO: Flaky")]       
+        [Fact(Skip = "TODO: Flaky")]       
         public void ModelIsChanged_WhenViewModelIsClosed_MessageBoxIsDisplayed()
         {
             var simpleModel = new SimpleEditableModel();

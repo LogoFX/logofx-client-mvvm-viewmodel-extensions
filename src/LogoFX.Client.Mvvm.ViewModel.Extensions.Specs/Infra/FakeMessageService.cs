@@ -5,7 +5,7 @@ using LogoFX.Client.Mvvm.ViewModel.Shared;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
 {
-    class FakeMessageService : IMessageService
+    public class FakeMessageService : IMessageService
     {
         public bool WasCalled { get; private set; }
         private MessageResult _messageResult = MessageResult.Yes;
