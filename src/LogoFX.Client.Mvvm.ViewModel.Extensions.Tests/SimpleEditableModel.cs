@@ -9,7 +9,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
 
     }
 
-    class SimpleEditableModel : EditableModel, ISimpleEditableModel
+    public class SimpleEditableModel : EditableModel, ISimpleEditableModel
     {
         public SimpleEditableModel(string name, int age)
             : this()
