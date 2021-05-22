@@ -7,9 +7,9 @@ using TechTalk.SpecFlow;
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
 {
     [UsedImplicitly]
-    public sealed class ScenarioDataStore : ScenarioDataStoreBase
+    public sealed class SimpleScenarioDataStore : ScenarioDataStoreBase
     {
-        public ScenarioDataStore(
+        public SimpleScenarioDataStore(
             ScenarioContext scenarioContext) : 
             base(scenarioContext)
         {
@@ -42,12 +42,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
         public bool WasCancelChangesRaised
         {
             get => GetValueImpl<bool>();
-            set => SetValueImpl(value);
-        }
-
-        public TestConductorViewModel RootObject
-        {
-            get => GetValueImpl<TestConductorViewModel>();
             set => SetValueImpl(value);
         }
     }

@@ -19,7 +19,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.8.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class EditableScreenObjectViewModelFeature : object, Xunit.IClassFixture<EditableScreenObjectViewModelFeature.FixtureData>, System.IDisposable
+    public partial class EditableScreenSimpleObjectViewModelFeature : object, Xunit.IClassFixture<EditableScreenSimpleObjectViewModelFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "Editable Screen Object View Model.feature"
+#line 1 "Editable Screen Simple Object View Model.feature"
 #line hidden
         
-        public EditableScreenObjectViewModelFeature(EditableScreenObjectViewModelFeature.FixtureData fixtureData, LogoFX_Client_Mvvm_ViewModel_Extensions_Specs_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public EditableScreenSimpleObjectViewModelFeature(EditableScreenSimpleObjectViewModelFeature.FixtureData fixtureData, LogoFX_Client_Mvvm_ViewModel_Extensions_Specs_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Editable Screen Object View Model", "\tAs an app developer\r\n\tI would like the framework to properly manage the state af" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Editable Screen Simple Object View Model", "\tAs an app developer\r\n\tI would like the framework to properly manage the state af" +
                     "ter the model changes\r\n\tSo that I am able to develop apps faster", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -82,7 +82,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Features
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="Changing property\'s value during editing should raise notifications")]
-        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Object View Model")]
+        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Simple Object View Model")]
         [Xunit.TraitAttribute("Description", "Changing property\'s value during editing should raise notifications")]
         public virtual void ChangingPropertysValueDuringEditingShouldRaiseNotifications()
         {
@@ -113,7 +113,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I open the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
- testRunner.And("I use editable screen object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I use editable screen simple object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
  testRunner.And("I set the name to be a valid name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -130,7 +130,7 @@ this.ScenarioInitialize(scenarioInfo);
         
         [Xunit.SkippableFactAttribute(DisplayName="Closing view model after property value has been changed should display a message" +
             "")]
-        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Object View Model")]
+        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Simple Object View Model")]
         [Xunit.TraitAttribute("Description", "Closing view model after property value has been changed should display a message" +
             "")]
         public virtual void ClosingViewModelAfterPropertyValueHasBeenChangedShouldDisplayAMessage()
@@ -163,7 +163,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I open the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 15
- testRunner.And("I use editable screen object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I use editable screen simple object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 16
  testRunner.And("I set the name to be a valid name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -180,7 +180,7 @@ this.ScenarioInitialize(scenarioInfo);
         
         [Xunit.SkippableFactAttribute(DisplayName="Closing view model after property value has not been changed should not display a" +
             " message")]
-        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Object View Model")]
+        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Simple Object View Model")]
         [Xunit.TraitAttribute("Description", "Closing view model after property value has not been changed should not display a" +
             " message")]
         public virtual void ClosingViewModelAfterPropertyValueHasNotBeenChangedShouldNotDisplayAMessage()
@@ -213,7 +213,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I open the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 22
- testRunner.And("I use editable screen object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I use editable screen simple object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 23
  testRunner.And("I close the editable screen object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -226,7 +226,7 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="Confirming changes on closing view model should save model")]
-        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Object View Model")]
+        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Simple Object View Model")]
         [Xunit.TraitAttribute("Description", "Confirming changes on closing view model should save model")]
         public virtual void ConfirmingChangesOnClosingViewModelShouldSaveModel()
         {
@@ -257,7 +257,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I open the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 28
- testRunner.And("I use editable screen object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I use editable screen simple object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 29
  testRunner.And("I set all confirmation to \'Yes\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -282,7 +282,7 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="Discarding changes on closing view model should not save model")]
-        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Object View Model")]
+        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Simple Object View Model")]
         [Xunit.TraitAttribute("Description", "Discarding changes on closing view model should not save model")]
         public virtual void DiscardingChangesOnClosingViewModelShouldNotSaveModel()
         {
@@ -313,7 +313,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I open the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 38
- testRunner.And("I use editable screen object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I use editable screen simple object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 39
  testRunner.And("I set all confirmation to \'No\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -338,7 +338,7 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="Cancelling close on closing view model should not clear dirty status")]
-        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Object View Model")]
+        [Xunit.TraitAttribute("FeatureTitle", "Editable Screen Simple Object View Model")]
         [Xunit.TraitAttribute("Description", "Cancelling close on closing view model should not clear dirty status")]
         public virtual void CancellingCloseOnClosingViewModelShouldNotClearDirtyStatus()
         {
@@ -369,7 +369,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I open the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 48
- testRunner.And("I use editable screen object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I use editable screen simple object view model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 49
  testRunner.And("I set all confirmation to \'Cancel\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -400,12 +400,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                EditableScreenObjectViewModelFeature.FeatureSetup();
+                EditableScreenSimpleObjectViewModelFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                EditableScreenObjectViewModelFeature.FeatureTearDown();
+                EditableScreenSimpleObjectViewModelFeature.FeatureTearDown();
             }
         }
     }

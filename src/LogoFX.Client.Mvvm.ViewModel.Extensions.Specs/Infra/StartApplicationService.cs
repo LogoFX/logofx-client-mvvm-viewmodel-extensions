@@ -7,14 +7,14 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
 {
     public class StartApplicationService : Attest.Testing.Integration.StartApplicationServiceBase
     {
-        private readonly ScenarioDataStore _scenarioDataStore;
+        private readonly CommonScenarioDataStore _commonScenarioDataStore;
         private readonly ScenarioContext _scenarioContext;
 
         protected StartApplicationService(
-            ScenarioDataStore scenarioDataStore,
+            CommonScenarioDataStore commonScenarioDataStore,
             ScenarioContext scenarioContext)
         {
-            _scenarioDataStore = scenarioDataStore;
+            _commonScenarioDataStore = commonScenarioDataStore;
             _scenarioContext = scenarioContext;
         }
 
@@ -35,7 +35,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
         protected override void OnStart(object rootObject)
         {
             base.OnStart(rootObject);
-            _scenarioDataStore.RootObject = (TestConductorViewModel) rootObject;
+            _commonScenarioDataStore.RootObject = (TestConductorViewModel) rootObject;
             ActivateRootObject(rootObject);
         }
 

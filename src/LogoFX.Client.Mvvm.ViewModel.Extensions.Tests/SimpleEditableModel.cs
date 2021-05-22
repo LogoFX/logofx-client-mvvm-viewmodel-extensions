@@ -4,7 +4,7 @@ using LogoFX.Client.Mvvm.Model.Contracts;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
 {
-    interface ISimpleEditableModel : IEditableModel
+    public interface ISimpleEditableModel : IEditableModel
     {
 
     }
