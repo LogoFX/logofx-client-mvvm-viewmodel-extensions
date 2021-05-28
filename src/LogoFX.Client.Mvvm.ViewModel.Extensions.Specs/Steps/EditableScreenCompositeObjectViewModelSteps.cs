@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Attest.Testing.Core;
 using FluentAssertions;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra;
@@ -11,13 +12,16 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Steps
     [Binding, UsedImplicitly]
     class EditableScreenCompositeObjectViewModelSteps
     {
-        private readonly CommonScenarioDataStore _commonScenarioDataStore;
+        private readonly RootObjectScenarioDataStore _rootObjectScenarioDataStore;
+        private readonly CommonScenarioDataStore<TestConductorViewModel> _commonScenarioDataStore;
         private readonly CompositeScenarioDataStore _compositeScenarioDataStore;
 
         public EditableScreenCompositeObjectViewModelSteps(
-            CommonScenarioDataStore commonScenarioDataStore,
+            RootObjectScenarioDataStore rootObjectScenarioDataStore,
+            CommonScenarioDataStore<TestConductorViewModel> commonScenarioDataStore,
             CompositeScenarioDataStore compositeScenarioDataStore)
         {
+            _rootObjectScenarioDataStore = rootObjectScenarioDataStore;
             _commonScenarioDataStore = commonScenarioDataStore;
             _compositeScenarioDataStore = compositeScenarioDataStore;
         }
@@ -33,7 +37,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Steps
 
             var screenObjectViewModel = new TestEditableScreenCompositeObjectViewModel(mockMessageService, compositeModel);
             _compositeScenarioDataStore.SystemUnderTest = screenObjectViewModel;
-            _commonScenarioDataStore.RootObject.ActivateItem(screenObjectViewModel);
+            ((TestConductorViewModel)_rootObjectScenarioDataStore.RootObject).ActivateItem(screenObjectViewModel);
         }
 
         [When(@"I add phone (.*)")]

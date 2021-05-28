@@ -1,21 +1,18 @@
-﻿using Attest.Testing.SpecFlow;
+﻿using Attest.Testing.Core;
 using JetBrains.Annotations;
-using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.ViewModels;
-using TechTalk.SpecFlow;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
 {
     [UsedImplicitly]
-    public sealed class CommonScenarioDataStore : ScenarioDataStoreBase
+    public sealed class CommonScenarioDataStore<TRootObject> 
     {
-        public CommonScenarioDataStore(ScenarioContext scenarioContext) : base(scenarioContext)
+        private readonly RootObjectScenarioDataStore _rootObjectScenarioDataStore;
+
+        public CommonScenarioDataStore(RootObjectScenarioDataStore rootObjectScenarioDataStore)
         {
+            _rootObjectScenarioDataStore = rootObjectScenarioDataStore;
         }
 
-        public TestConductorViewModel RootObject
-        {
-            get => GetValueImpl<TestConductorViewModel>();
-            set => SetValueImpl(value);
-        }
+        public TRootObject RootObject => (TRootObject)_rootObjectScenarioDataStore.RootObject;
     }
 }

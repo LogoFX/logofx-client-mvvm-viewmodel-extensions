@@ -1,4 +1,4 @@
-﻿using Attest.Testing.Core;
+﻿using Attest.Testing.Bootstrapping;
 using Solid.Practices.IoC;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Bootstrapping

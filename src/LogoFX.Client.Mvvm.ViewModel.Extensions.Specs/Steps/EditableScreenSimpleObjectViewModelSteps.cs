@@ -11,11 +11,11 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Steps
     [Binding, UsedImplicitly]
     class EditableScreenSimpleObjectViewModelSteps
     {
-        private readonly CommonScenarioDataStore _commonScenarioDataStore;
+        private readonly CommonScenarioDataStore<TestConductorViewModel> _commonScenarioDataStore;
         private readonly SimpleScenarioDataStore _simpleScenarioDataStore;
 
         public EditableScreenSimpleObjectViewModelSteps(
-            CommonScenarioDataStore commonScenarioDataStore,
+            CommonScenarioDataStore<TestConductorViewModel> commonScenarioDataStore,
             SimpleScenarioDataStore simpleScenarioDataStore)
         {
             _commonScenarioDataStore = commonScenarioDataStore;

@@ -1,20 +1,22 @@
 ﻿using Attest.Testing.SpecFlow;
 using Caliburn.Micro;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.ViewModels;
-using TechTalk.SpecFlow;
+using RootObjectScenarioDataStore = Attest.Testing.Core.RootObjectScenarioDataStore;
+using ScenarioContext = TechTalk.SpecFlow.ScenarioContext;
+using ScenarioHelper = Attest.Testing.Core.ScenarioHelper;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
 {
     public class StartApplicationService : Attest.Testing.Integration.StartApplicationServiceBase
     {
-        private readonly CommonScenarioDataStore _commonScenarioDataStore;
         private readonly ScenarioContext _scenarioContext;
 
         protected StartApplicationService(
-            CommonScenarioDataStore commonScenarioDataStore,
+            ScenarioHelper scenarioHelper,
+            RootObjectScenarioDataStore rootObjectScenarioDataStore,
             ScenarioContext scenarioContext)
+            :base(scenarioHelper, rootObjectScenarioDataStore)
         {
-            _commonScenarioDataStore = commonScenarioDataStore;
             _scenarioContext = scenarioContext;
         }
 
@@ -35,7 +37,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
         protected override void OnStart(object rootObject)
         {
             base.OnStart(rootObject);
-            _commonScenarioDataStore.RootObject = (TestConductorViewModel) rootObject;
             ActivateRootObject(rootObject);
         }
 

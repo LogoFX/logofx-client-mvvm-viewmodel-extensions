@@ -1,8 +1,11 @@
 ﻿using Attest.Testing.Contracts;
 using Attest.Testing.Core;
+using Attest.Testing.SpecFlow;
 using JetBrains.Annotations;
 using Solid.Practices.IoC;
 using Solid.Practices.Modularity;
+using RootObjectScenarioDataStore = Attest.Testing.Core.RootObjectScenarioDataStore;
+using ScenarioHelper = Attest.Testing.Core.ScenarioHelper;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
 {
@@ -11,6 +14,9 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
     {
         public void RegisterModule(IDependencyRegistrator dependencyRegistrator) => dependencyRegistrator
             .AddSingleton<IStartApplicationService, StartApplicationService>()
+            .AddSingleton<IDataAccessor, ScenarioContextDataAccessorAdapter>()
+            .AddSingleton<ScenarioHelper>()
+            .AddSingleton<RootObjectScenarioDataStore>()
             .UseLocalApplicationForIntegration();
     }
 }
