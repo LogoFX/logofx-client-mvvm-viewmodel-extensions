@@ -20,7 +20,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Bootstrapping
             base.InitializeOverride(bootstrapper);
             bootstrapper
                 .UseIntegration<BootstrapperBase, StartApplicationService>()
-                .UseKeyValueStore();
+                .UseKeyValueDataStore();
         }
     }
 }

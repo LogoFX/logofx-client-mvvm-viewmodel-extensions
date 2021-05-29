@@ -1,8 +1,8 @@
-﻿using Attest.Testing.SpecFlow;
+﻿using Attest.Testing.DataStore;
+using Attest.Testing.SpecFlow;
 using Caliburn.Micro;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.ViewModels;
-using RootObjectScenarioDataStore = Attest.Testing.Core.RootObjectScenarioDataStore;
-using ScenarioContext = TechTalk.SpecFlow.ScenarioContext;
+using TechTalk.SpecFlow;
 using ScenarioHelper = Attest.Testing.Core.ScenarioHelper;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra

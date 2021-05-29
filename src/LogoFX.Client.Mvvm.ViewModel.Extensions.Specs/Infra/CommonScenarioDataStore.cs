@@ -1,4 +1,4 @@
-﻿using Attest.Testing.Core;
+﻿using Attest.Testing.DataStore;
 using JetBrains.Annotations;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
