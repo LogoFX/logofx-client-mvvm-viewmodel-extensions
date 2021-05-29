@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Attest.Tests.SpecFlow" Version="2.1.2" />
+    <PackageReference Include="Attest.Tests.SpecFlow" Version="2.1.3-rc1" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />          
     <PackageReference Include="JetBrains.Annotations" Version="2021.1.0" />
     <PackageReference Include="LogoFX.Client.Bootstrapping" Version="2.2.0-rc3" />
