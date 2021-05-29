@@ -1,8 +1,9 @@
 ﻿using Attest.Testing.Bootstrapping;
-using Attest.Testing.Contracts;
-using Attest.Testing.Core;
+using Attest.Testing.Integration;
+using Attest.Testing.SpecFlow;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra;
 using Solid.Practices.IoC;
+using BootstrapperBase = Attest.Testing.Bootstrapping.BootstrapperBase;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Bootstrapping
 {
@@ -17,12 +18,9 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Bootstrapping
         protected override void InitializeOverride(Bootstrapper bootstrapper)
         {
             base.InitializeOverride(bootstrapper);
-            //TODO: Replace with Middleware
-            bootstrapper.Registrator
-                .AddSingleton<IStartApplicationService, StartApplicationService>()
-                .AddSingleton<ScenarioHelper>()
-                .AddSingleton<RootObjectScenarioDataStore>()
-                .UseLocalApplicationForIntegration();
+            bootstrapper
+                .UseIntegration<BootstrapperBase, StartApplicationService>()
+                .UseKeyValueStore();
         }
     }
 }
