@@ -1,6 +1,6 @@
 ﻿using Attest.Testing.Bootstrapping;
+using Attest.Testing.Context.SpecFlow;
 using Attest.Testing.Integration;
-using Attest.Testing.SpecFlow;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra;
 using Solid.Practices.IoC;
 using BootstrapperBase = Attest.Testing.Bootstrapping.BootstrapperBase;

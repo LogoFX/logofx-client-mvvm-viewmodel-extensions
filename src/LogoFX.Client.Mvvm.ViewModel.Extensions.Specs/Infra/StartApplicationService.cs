@@ -1,5 +1,5 @@
-﻿using Attest.Testing.DataStore;
-using Attest.Testing.SpecFlow;
+﻿using Attest.Testing.Context;
+using Attest.Testing.Integration.SpecFlow;
 using Caliburn.Micro;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.ViewModels;
 using TechTalk.SpecFlow;

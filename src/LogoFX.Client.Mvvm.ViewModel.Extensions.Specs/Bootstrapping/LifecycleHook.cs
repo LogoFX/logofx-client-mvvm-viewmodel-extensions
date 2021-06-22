@@ -1,4 +1,4 @@
-﻿using Attest.Testing.SpecFlow;
+﻿using Attest.Testing.Lifecycle.SpecFlow;
 using BoDi;
 using JetBrains.Annotations;
 using Solid.Practices.IoC;

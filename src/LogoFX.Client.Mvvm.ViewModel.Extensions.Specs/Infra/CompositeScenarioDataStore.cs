@@ -1,4 +1,4 @@
-﻿using Attest.Testing.SpecFlow;
+﻿using Attest.Testing.Context.SpecFlow;
 using JetBrains.Annotations;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.ViewModels;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Tests;
@@ -15,20 +15,20 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
 
         public TestEditableScreenCompositeObjectViewModel SystemUnderTest
         {
-            get => GetValueImpl<TestEditableScreenCompositeObjectViewModel>();
-            set => SetValueImpl(value);
+            get => GetValue<TestEditableScreenCompositeObjectViewModel>();
+            set => SetValue(value);
         }
 
         public CompositeEditableModel Model
         {
-            get => GetValueImpl<CompositeEditableModel>();
-            set => SetValueImpl(value);
+            get => GetValue<CompositeEditableModel>();
+            set => SetValue(value);
         }
 
         public FakeMessageService MockMessageService
         {
-            get => GetValueImpl<FakeMessageService>();
-            set => SetValueImpl(value);
+            get => GetValue<FakeMessageService>();
+            set => SetValue(value);
         }
     }
 }

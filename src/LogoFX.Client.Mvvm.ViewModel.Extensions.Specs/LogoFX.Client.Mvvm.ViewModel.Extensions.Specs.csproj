@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Attest.Tests.SpecFlow" Version="2.2.1-rc1" />
+    <PackageReference Include="Attest.Tests.SpecFlow" Version="2.3.2" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />          
     <PackageReference Include="JetBrains.Annotations" Version="2021.1.0" />
     <PackageReference Include="LogoFX.Client.Bootstrapping" Version="2.2.0-rc3" />
@@ -24,23 +24,17 @@
     <PackageReference Include="LogoFX.Client.Mvvm.Model" Version="2.2.0-rc3" />
     <PackageReference Include="LogoFX.Client.Tests.Shared" Version="2.2.0-rc3" />
     <PackageReference Include="LogoFX.Client.Tests.Shared.Caliburn.Micro" Version="2.2.0-rc3" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
-    <PackageReference Include="SpecFlow" Version="3.8.14" />
-    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.8.14" />
-    <PackageReference Include="SpecFlow.xUnit" Version="3.8.14" />
+    <PackageReference Include="SpecFlow" Version="3.9.8" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.8" />
+    <PackageReference Include="SpecFlow.xUnit" Version="3.9.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\LogoFX.Client.Mvvm.ViewModel.Extensions\LogoFX.Client.Mvvm.ViewModel.Extensions.csproj" />
     <ProjectReference Include="..\LogoFX.Client.Mvvm.ViewModel.Services\LogoFX.Client.Mvvm.ViewModel.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Features\Editable Screen Composite Object View Model.feature.cs">
-      <DesignTime>True</DesignTime>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -50,13 +44,6 @@
     <None Update="xunit.runner.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <SpecFlowFeatureFiles Update="Features\Editable Screen Composite Object View Model.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Editable Screen Composite Object View Model.feature.cs</LastGenOutput>
-    </SpecFlowFeatureFiles>
   </ItemGroup>
 
 </Project>

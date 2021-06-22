@@ -6,11 +6,11 @@ mkdir net461\
 robocopy ../../../../../src/Bin/netframework/Release net461 LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.* /E
 robocopy ../../../../../src/lib/Caliburn.Micro/net45 net461 Caliburn.Micro.Platform.* /E
 robocopy ../../../../../src/lib/Caliburn.Micro/net45 net461 System.Windows.Interactivity.* /E
-mkdir net5.0-windows
-robocopy ../../../../../src/Bin/net/Release net5.0-windows LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.* /E
-robocopy ../../../../../src/lib/Caliburn.Micro/net45 net5.0-windows Caliburn.Micro.Platform.* /E
-robocopy ../../../../../src/lib/Caliburn.Micro/net45 net5.0-windows System.Windows.Interactivity.* /E
-cd net5.0-windows
+mkdir net5.0
+robocopy ../../../../../src/Bin/net/Release net5.0 LogoFX.Client.Mvvm.ViewModel.Extensions.Platform.* /E
+robocopy ../../../../../src/lib/Caliburn.Micro/net45 net5.0 Caliburn.Micro.Platform.* /E
+robocopy ../../../../../src/lib/Caliburn.Micro/net45 net5.0 System.Windows.Interactivity.* /E
+cd net5.0
 rmdir /Q /S ref
 cd ..
 mkdir netcoreapp3.1
