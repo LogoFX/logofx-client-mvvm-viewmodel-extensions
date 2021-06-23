@@ -6,7 +6,6 @@ using Solid.Practices.Scheduling;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
 {
-
     class TestEditableScreenCompositeObjectViewModel : EditableScreenObjectViewModel<CompositeEditableModel>
     {
         private readonly IMessageService _messageService;
