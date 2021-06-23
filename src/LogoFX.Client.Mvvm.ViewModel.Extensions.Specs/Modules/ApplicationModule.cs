@@ -23,9 +23,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Modules
             _startLocalApplicationService.Start();
         }
 
-        public void Stop()
-        {
-
-        }
+        public void Stop() {}
     }
 }

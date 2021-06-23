@@ -64,7 +64,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Steps
             }
         }
 
-
         [When(@"I set the name to be a valid name")]
         public void WhenISetTheNameToBeAValidName()
         {

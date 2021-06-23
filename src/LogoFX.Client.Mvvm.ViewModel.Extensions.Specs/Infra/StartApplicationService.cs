@@ -29,10 +29,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
             LogoFX.Client.Testing.Shared.TestHelper.Setup();
         }
 
-        protected virtual void OnArrange()
-        {
-
-        }
+        protected virtual void OnArrange() {}
 
         protected override void OnStart(object rootObject)
         {
@@ -49,10 +46,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Infra
             WithExplicitRootObjectCreation
         {
             public BootstrapperBridge(ScenarioContext scenarioContext)
-                : base(scenarioContext)
-            {
-
-            }
+                : base(scenarioContext) {}
         }
     }
 }
