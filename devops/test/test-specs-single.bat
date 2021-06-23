@@ -1,5 +1,6 @@
 rem TODO: Provide more generic and reusable way
 cd ../../src/%1
+cd
 dotnet test %1.csproj -c Release
 rem TODO: Provide more generic and reusable way
 cd ./Bin/Release
