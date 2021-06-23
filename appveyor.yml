@@ -1,4 +1,6 @@
 version: 2.2.0.{build}
+init:
+- dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
 configuration: Release
 before_build:
 - cd src
