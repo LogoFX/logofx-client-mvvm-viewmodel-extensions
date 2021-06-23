@@ -10,7 +10,7 @@ image: Visual Studio 2019
 build:
   verbosity: minimal
   project: ./src/LogoFX.Client.Mvvm.ViewModel.Extensions.sln
-clone_folder: c:\projects\
+clone_folder: c:\projects\ext
 test_script:
 - cd ..\devops\test
 - test-all.bat
