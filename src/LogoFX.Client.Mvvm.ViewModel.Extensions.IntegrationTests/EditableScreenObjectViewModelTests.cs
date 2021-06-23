@@ -14,10 +14,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
     public class EditableScreenObjectViewModelTests : IntegrationTestsBase<TestConductorViewModel, TestBootstrapper>
     {      
         public EditableScreenObjectViewModelTests()
-        :base(new SimpleKeyValueDataStore())
-        {
-            
-        }
+        :base(new SimpleKeyValueDataStore()) {}
 
         //Note: may use here IntegrationTestsBaseWithActivation as well - package still not available.
         protected override TestConductorViewModel CreateRootObjectOverride(TestConductorViewModel rootObject)
