@@ -4,12 +4,12 @@ using LogoFX.Client.Mvvm.Model.Contracts;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
 {
-    interface ISimpleEditableModel : IEditableModel
+    public interface ISimpleEditableModel : IEditableModel
     {
 
     }
 
-    class SimpleEditableModel : EditableModel, ISimpleEditableModel
+    public class SimpleEditableModel : EditableModel, ISimpleEditableModel
     {
         public SimpleEditableModel(string name, int age)
             : this()

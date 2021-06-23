@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Attest.Testing.Context;
 using Caliburn.Micro;
 using FluentAssertions;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Tests;
@@ -11,7 +12,10 @@ using Xunit;
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
 {
     public class EditableScreenObjectViewModelTests : IntegrationTestsBase<TestConductorViewModel, TestBootstrapper>
-    {        
+    {      
+        public EditableScreenObjectViewModelTests()
+        :base(new SimpleKeyValueDataStore()) {}
+
         //Note: may use here IntegrationTestsBaseWithActivation as well - package still not available.
         protected override TestConductorViewModel CreateRootObjectOverride(TestConductorViewModel rootObject)
         {
@@ -54,7 +58,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.IntegrationTests
             wasCancelChangesRaised.Should().BeTrue();
         }
 
-        [Fact(Skip="TODO: Flaky")]       
+        [Fact(Skip = "TODO: Flaky")]       
         public void ModelIsChanged_WhenViewModelIsClosed_MessageBoxIsDisplayed()
         {
             var simpleModel = new SimpleEditableModel();
