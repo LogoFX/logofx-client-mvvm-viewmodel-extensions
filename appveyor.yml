@@ -1,12 +1,11 @@
 version: 2.2.0.{build}
-init:
-- dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
 configuration: Release
 before_build:
 - cd src
 - nuget restore
 init:
 - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+- dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
 image: Visual Studio 2019
 build:
   verbosity: minimal
