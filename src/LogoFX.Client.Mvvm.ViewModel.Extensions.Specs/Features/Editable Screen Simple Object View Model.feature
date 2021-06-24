@@ -1,4 +1,5 @@
-﻿Feature: Editable Screen Simple Object View Model
+﻿@ignore
+Feature: Editable Screen Simple Object View Model
 	As an app developer
 	I would like the framework to properly manage the state after the model changes
 	So that I am able to develop apps faster
