@@ -14,7 +14,7 @@
 for the most common view models (including editing, paging and virtualization)</description>
     <summary>LogoFX Client Mvvm ViewModel Extensions containing various use cases
 for the most common view models (including editing, paging and virtualization)</summary>
-    <releaseNotes>Updated dependent packages</releaseNotes>
+    <releaseNotes></releaseNotes>
     <dependencies>
       <dependency id="LogoFX.Core" version="2.2.0" />
       <dependency id="LogoFX.Client.Mvvm.Core" version="2.2.0" />
@@ -26,5 +26,7 @@ for the most common view models (including editing, paging and virtualization)</
       <dependency id="LogoFX.Client.Mvvm.ViewModel.Shared" version="2.2.0" />
       <dependency id="LogoFX.Client.Mvvm.ViewModel.Extensions.Core" version="2.2.0" />
     </dependencies>
+    <tags>framework logofx dotnet</tags>
+    <repository type="Open Source" url="https://github.com/LogoFX/logofx-client-mvvm-viewmodel-extensions" />
   </metadata>
 </package>
