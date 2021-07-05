@@ -64,6 +64,5 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                 return null;
             }
         }
-
     }
 }

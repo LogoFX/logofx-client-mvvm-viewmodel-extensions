@@ -270,7 +270,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
-
                 }
                 base.OnCollectionChanged(e);
             }
