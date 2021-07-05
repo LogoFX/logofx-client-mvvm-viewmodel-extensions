@@ -112,7 +112,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                 get { return _selectedItems.Count > 0 ? _selectedItems[0] : null; }
             }
 
-
             /// <summary>
             /// Selected items
             /// </summary>
@@ -284,8 +283,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             /// Override this method to inject custom logic after the selection is changed.
             /// </summary>
             protected virtual void OnSelectionChanged()
-            {
-            }
+            {}
 
             #endregion
 

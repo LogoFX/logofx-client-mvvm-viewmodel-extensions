@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using LogoFX.Client.Mvvm.ViewModel.Extensions.Tests;
 using LogoFX.Client.Mvvm.ViewModel.Services;
 using LogoFX.Client.Mvvm.ViewModel.Shared;
@@ -6,22 +6,22 @@ using Solid.Practices.Scheduling;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.ViewModels
 {
-    public class TestEditableScreenSimpleObjectViewModel : EditableScreenObjectViewModel<SimpleEditableModel>
+    public class TestEditableScreenCompositeObjectViewModel : EditableScreenObjectViewModel<CompositeEditableModel>
     {
         private readonly IMessageService _messageService;
         private readonly TaskFactory _taskFactory = TaskFactoryFactory.CreateTaskFactory();
 
-        public TestEditableScreenSimpleObjectViewModel(
-            IMessageService messageService,             
-            SimpleEditableModel model) : base(model)
+        public TestEditableScreenCompositeObjectViewModel(
+            IMessageService messageService,
+            CompositeEditableModel model) : base(model)
         {
             _messageService = messageService;
         }
 
         internal bool WasCancelingChangesCalled { get; private set; }
 
-        protected override Task<bool> SaveMethod(SimpleEditableModel model)
-        {            
+        protected override Task<bool> SaveMethod(CompositeEditableModel model)
+        {
             return Task.FromResult(true);
         }
 

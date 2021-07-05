@@ -264,7 +264,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
 
 #region IDataErrorInfo
 
-
         /// <summary>
         /// Gets the error message for the property with the given name.
         /// </summary>

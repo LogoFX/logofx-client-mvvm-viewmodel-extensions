@@ -99,9 +99,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// </summary>
         /// <param name="item">The item.</param>
         protected virtual void OnCreated(TItem item)
-        {
-
-        }
+        {}
 
         /// <summary>
         /// Gets the item.

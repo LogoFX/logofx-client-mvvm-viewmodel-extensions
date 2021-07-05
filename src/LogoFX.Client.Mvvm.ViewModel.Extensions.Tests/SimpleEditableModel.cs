@@ -5,9 +5,7 @@ using LogoFX.Client.Mvvm.Model.Contracts;
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
 {
     public interface ISimpleEditableModel : IEditableModel
-    {
-
-    }
+    {}
 
     public class SimpleEditableModel : EditableModel, ISimpleEditableModel
     {
@@ -19,9 +17,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
         }
 
         public SimpleEditableModel()
-        {
-            
-        }
+        {}
 
         private string _name;
         [NameValidation]
@@ -38,14 +34,5 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
             }
         }
         public int Age { get; set; }
-    }
-
-    interface ICompositeEditableModel : IEditableModel
-    {
-        IEnumerable<int> Phones { get; }
-
-        ISimpleEditableModel Person { get; set; }
-
-        IEnumerable<ISimpleEditableModel> SimpleCollection { get; }
     }
 }

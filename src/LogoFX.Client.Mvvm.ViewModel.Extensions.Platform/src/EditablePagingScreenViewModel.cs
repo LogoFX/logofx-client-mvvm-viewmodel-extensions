@@ -116,9 +116,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// Override this method to inject custom logic when the paging item's model is saved.
         /// </summary>
         protected virtual void OnItemSaved()
-        {
-
-        }
+        {}
 
 #endregion
 
