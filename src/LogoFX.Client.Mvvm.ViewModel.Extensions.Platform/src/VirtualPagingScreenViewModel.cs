@@ -30,8 +30,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// Updates the sort descriptors.
         /// </summary>
         protected sealed override void UpdateSortDescriptors()
-        {
-
-        }
+        {}
     }
 }

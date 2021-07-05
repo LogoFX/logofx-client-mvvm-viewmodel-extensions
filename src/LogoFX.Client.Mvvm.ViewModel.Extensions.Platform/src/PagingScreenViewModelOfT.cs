@@ -28,7 +28,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         where TModel : class
         where TItem : class, IPagingItem
     {
-#region Fields                                       
+#region Fields   
 
         private int _oldPageCount;
         private int? _oldCurrentPage;        
@@ -339,9 +339,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// Override this method to inject custom logic on refreshing the view.
         /// </summary>
         protected virtual void OnRefresh()
-        {
-
-        }
+        {}
 
         /// <summary>
         /// Refreshes the data.

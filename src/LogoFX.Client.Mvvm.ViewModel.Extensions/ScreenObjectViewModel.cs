@@ -125,8 +125,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <param name="newValue">New Value</param>
         /// <param name="oldValue">Old Value</param>
         protected virtual void OnIsExpandedChangedOverride(bool newValue, bool oldValue)
-        {
-        }
+        {}
 
         #endregion
 
@@ -158,8 +157,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <param name="newValue">New Value</param>
         /// <param name="oldValue">Old Value</param>
         protected virtual void OnIsCurrentChangedOverride(bool newValue, bool oldValue)
-        {
-        }
+        {}
 
         #endregion
 
@@ -191,15 +189,13 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <param name="newValue">New Value</param>
         /// <param name="oldValue">Old Value</param>
         protected virtual void OnIsSelectedChangedOverride(bool newValue, bool oldValue)
-        {
-        }
+        {}
 
         #endregion
 
         #region LastError property
 
         private string _lastError;
-
         /// <summary>
         /// LastError property
         /// </summary>
@@ -224,8 +220,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <param name="newValue">New Value</param>
         /// <param name="oldValue">Old Value</param>
         protected virtual void OnLastErrorChangedOverride(string newValue, string oldValue)
-        {
-        }
+        {}
 
         #endregion
 
@@ -257,8 +252,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <param name="newValue">New Value</param>
         /// <param name="oldValue">Old Value</param>
         protected virtual void OnIsBusyChangedOverride(bool newValue, bool oldValue)
-        {
-        }
+        {}
 
         #endregion
 
@@ -290,8 +284,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// <param name="newValue">New Value</param>
         /// <param name="oldValue">Old Value</param>
         protected virtual void OnParentChangedOverride(IViewModel newValue, IViewModel oldValue)
-        {
-        }
+        {}
 
         #endregion
 
@@ -302,9 +295,8 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
         /// </summary>
         /// <filterpriority>2</filterpriority>
         public virtual void Dispose()
-        {
-
-        }
+        {}
+        
         #endregion        
 
         /// <summary>
