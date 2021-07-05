@@ -112,9 +112,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                 #region IEnumerator<T>
 
                 public void Dispose()
-                {
-
-                }
+                {}
 
                 public bool MoveNext()
                 {

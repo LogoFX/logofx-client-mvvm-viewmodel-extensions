@@ -53,9 +53,7 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             /// Updates the sort descriptors.
             /// </summary>
             protected sealed override void UpdateSortDescriptors()
-            {
-
-            }
+            {}
 
             /// <summary>
             /// Creates the collection view.
@@ -66,6 +64,5 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
                 return null;
             }
         }
-
     }
 }

@@ -14,7 +14,6 @@ namespace LogoFX.Client.Mvvm.ViewModel.Extensions
             Model = model;
         }
 
-
         private bool _isSelected;
         public bool IsSelected
         {
