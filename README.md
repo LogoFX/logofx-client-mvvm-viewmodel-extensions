@@ -3,6 +3,8 @@ Various view model scenarios including custom error display, edit/cancel functio
 
 <img src=https://ci.appveyor.com/api/projects/status/github/logofx/logofx-client-mvvm-viewmodel-extensions>
 
+[![CodeFactor](https://www.codefactor.io/repository/github/logofx/logofx-client-mvvm-viewmodel-extensions/badge)](https://www.codefactor.io/repository/github/logofx/logofx-client-mvvm-viewmodel-extensions)
+
 ## Shared
 
 <img src=https://img.shields.io/nuget/dt/LogoFX.Client.Mvvm.ViewModel.Shared>
