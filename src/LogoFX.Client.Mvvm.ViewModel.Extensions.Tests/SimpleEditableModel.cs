@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using LogoFX.Client.Mvvm.Model;
+﻿using LogoFX.Client.Mvvm.Model;
 using LogoFX.Client.Mvvm.Model.Contracts;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Tests
