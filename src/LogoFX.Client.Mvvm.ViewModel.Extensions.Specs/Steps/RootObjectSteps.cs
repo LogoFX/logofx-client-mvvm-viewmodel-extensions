@@ -1,5 +1,5 @@
-﻿using Attest.Testing.Contracts;
-using Attest.Testing.Lifecycle;
+﻿using Attest.Testing.Lifecycle;
+using Attest.Testing.Modularity;
 using JetBrains.Annotations;
 using Solid.Practices.IoC;
 using TechTalk.SpecFlow;
