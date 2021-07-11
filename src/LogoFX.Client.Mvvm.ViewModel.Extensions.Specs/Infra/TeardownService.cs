@@ -1,4 +1,4 @@
-﻿using Attest.Testing.Contracts;
+﻿using Attest.Testing.Lifecycle;
 using JetBrains.Annotations;
 using LogoFX.Client.Testing.Shared.Caliburn.Micro;
 

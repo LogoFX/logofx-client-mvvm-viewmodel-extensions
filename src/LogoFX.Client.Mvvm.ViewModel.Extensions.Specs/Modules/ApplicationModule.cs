@@ -1,4 +1,5 @@
-﻿using Attest.Testing.Contracts;
+﻿using Attest.Testing.Lifecycle;
+using Attest.Testing.Modularity;
 using JetBrains.Annotations;
 
 namespace LogoFX.Client.Mvvm.ViewModel.Extensions.Specs.Modules
