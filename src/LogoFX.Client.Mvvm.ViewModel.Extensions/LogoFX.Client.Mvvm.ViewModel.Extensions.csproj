@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <Version>2.2.1</Version>
+    <Version>2.2.2</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\Bin\netstandard\Release</OutputPath>
@@ -12,11 +12,11 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core" Version="2.2.1" />
-    <PackageReference Include="LogoFX.Client.Mvvm.Model" Version="2.2.1" />
-    <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Contracts" Version="2.2.1" />
-    <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core" Version="2.2.1" />
-    <PackageReference Include="LogoFX.Core" Version="2.2.1" />
+    <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core" Version="2.2.2" />
+    <PackageReference Include="LogoFX.Client.Mvvm.Model" Version="2.2.2" />
+    <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Contracts" Version="2.2.2" />
+    <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core" Version="2.2.2" />
+    <PackageReference Include="LogoFX.Core" Version="2.2.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LogoFX.Client.Mvvm.ViewModel.Shared\LogoFX.Client.Mvvm.ViewModel.Shared.csproj" />

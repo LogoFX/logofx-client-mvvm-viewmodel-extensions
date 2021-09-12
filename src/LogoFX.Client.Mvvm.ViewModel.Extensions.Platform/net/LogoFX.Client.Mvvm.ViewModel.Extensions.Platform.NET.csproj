@@ -5,7 +5,7 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>LogoFX.Client.Mvvm.ViewModel.Extensions.Platform</AssemblyName>
     <RootNamespace>LogoFX.Client.Mvvm.ViewModel.Extensions</RootNamespace>
-    <Version>2.2.1</Version>
+    <Version>2.2.2</Version>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\..\Bin\net\Release\</OutputPath>
@@ -33,10 +33,10 @@
     <Compile Include="..\src\VirtualPagingScreenViewModel.WithFilter.cs" Link="VirtualPagingScreenViewModel.WithFilter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core" Version="2.2.1" />
-    <PackageReference Include="LogoFX.Client.Mvvm.Core" Version="2.2.1" />
-    <PackageReference Include="LogoFX.Client.Mvvm.Model" Version="2.2.1" />
-    <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core" Version="2.2.1" />
+    <PackageReference Include="LogoFX.Client.Mvvm.Commanding.Core" Version="2.2.2" />
+    <PackageReference Include="LogoFX.Client.Mvvm.Core" Version="2.2.2" />
+    <PackageReference Include="LogoFX.Client.Mvvm.Model" Version="2.2.2" />
+    <PackageReference Include="LogoFX.Client.Mvvm.ViewModel.Core" Version="2.2.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\LogoFX.Client.Mvvm.ViewModel.Extensions\LogoFX.Client.Mvvm.ViewModel.Extensions.csproj" />
