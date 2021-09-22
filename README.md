@@ -34,3 +34,5 @@ Various view model scenarios including custom error display, edit/cancel functio
 <img src=https://img.shields.io/nuget/dt/LogoFX.Client.Mvvm.ViewModel.Extensions>
 
 [Get package](https://www.nuget.org/packages/LogoFX.Client.Mvvm.ViewModel.Extensions)
+
+This repository is archived. Its functionality has been moved to https://github.com/LogoFX/mvvm
